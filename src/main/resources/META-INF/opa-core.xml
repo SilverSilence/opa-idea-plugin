@@ -49,8 +49,7 @@
         <!-- Project configuration -->
         <projectService serviceImplementation="org.openpolicyagent.ideaplugin.opa.project.settings.OpaProjectSettings"/>
         <projectConfigurable groupId="language" id="Settings.Project.Opa" instance="org.openpolicyagent.ideaplugin.opa.project.settings.OpaOptionsConfigurable"/>
-
-</extensions>
+    </extensions>
 
     <actions>
 
