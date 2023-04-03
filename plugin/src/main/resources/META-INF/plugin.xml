@@ -33,6 +33,8 @@
         <!-- although Rego module type is only created by IDEA, we need it in other IDEs as well
            to be able to open a project created in IDEA without errors -->
         <moduleType id="REGO_MODULE" implementationClass="org.openpolicyagent.ideaplugin.ide.extensions.RegoModuleType"/>
+            <psi.referenceContributor language="kotlin"
+                                      implementation="org.openpolicyagent.ideaplugin.ide.reference.RegoReferenceContributor"/>
     </extensions>
 
 </idea-plugin>

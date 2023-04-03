@@ -6,7 +6,6 @@
 package org.openpolicyagent.ideaplugin.ide.highlight
 
 import com.intellij.lang.annotation.AnnotationHolder
-import com.intellij.lang.annotation.Annotator
 import com.intellij.lang.annotation.HighlightSeverity
 import com.intellij.psi.PsiElement
 import org.openpolicyagent.ideaplugin.ide.colors.RegoColor

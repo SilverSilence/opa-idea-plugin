@@ -42,6 +42,11 @@ idea {
     }
 }
 
+intellij {
+    version.set("2022.2.5")
+    plugins.set(listOf("com.intellij.java"))
+}
+
 plugins {
     idea
     kotlin("jvm") version "1.8.10"

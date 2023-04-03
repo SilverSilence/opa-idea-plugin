@@ -12,6 +12,7 @@
   psiImplClassSuffix="Impl"
   psiPackage= "org.openpolicyagent.ideaplugin.lang.psi"
   psiImplPackage="org.openpolicyagent.ideaplugin.lang.psi.impl"
+  psiImplUtilClass="org.openpolicyagent.ideaplugin.lang.psi.ruleelements.RegoPsiImplUtil"
 
   elementTypeHolderClass="org.openpolicyagent.ideaplugin.lang.psi.RegoTypes"
   elementTypeClass="org.openpolicyagent.ideaplugin.lang.psi.RegoElementType"
@@ -67,6 +68,10 @@ module              ::= package (import|  rule)*
 package             ::= "package" ref
 import              ::= "import" ref ( "as" var )?
 rule                ::= "default"?  rule-head  rule-body*
+{
+    mixin="org.openpolicyagent.ideaplugin.lang.psi.ruleelements.RegoRuleElementImpl"
+    implements="org.openpolicyagent.ideaplugin.lang.psi.ruleelements.RegoRuleElement"
+}
 rule-head           ::= var ( "(" rule-args? ")" )? ("[" term "]" )? ( ( ":=" | "=" ) expr )?
 rule-args           ::= term ( "," term )*
 rule-body           ::= else-expr  | query-block
